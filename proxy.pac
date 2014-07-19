@@ -1,7 +1,6 @@
-function FindProxyForURL(url, host) 
-{  
-    if (shExpMatch(host, "*.pkulaw.cn/*"))  
-        return "PROXY proxy.pku.edu.cn:8080";  
+function FindProxyForURL(url, host) {  
+    if (shExpMatch(host, "*.pkulaw.*"))  
+      return "PROXY proxy.pku.edu.cn:8080";  
     else  
-        return "DIRECT";  
+      return "DIRECT";  
 }  
